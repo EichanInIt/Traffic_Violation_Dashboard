@@ -59,7 +59,7 @@ traffic-safety-enforcement-dashboard/
 ## Quick Start
 
 ### Prerequisites
-- A modern web browser with ES6 support
+- A modern web browser
 - A local web server (Live Server extension for VS Code, Python, or PHP)
 
 ### Setup
