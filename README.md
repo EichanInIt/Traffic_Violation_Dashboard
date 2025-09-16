@@ -177,7 +177,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - **Co-Contributor**: [Senuja Linal](https://github.com/senujalinal) - Collaborative development and technical contributions
-- Data source: [Road safety enforcement data 2024] (https://www.bitre.gov.au/publications/2024/road-safety-enforcement-data)
+- Data source: [Road_safety enforcement data 2024](https://www.bitre.gov.au/publications/2024/road-safety-enforcement-data)
 - Built with D3.js visualization library
 - Australian map data based on official geographic boundaries
 
