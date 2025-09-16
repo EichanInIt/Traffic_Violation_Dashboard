@@ -123,13 +123,10 @@ The dashboard expects CSV files with the following structure:
 
 ## Technology Stack
 
-- **Frontend**: Vanilla JavaScript (ES6+), HTML5, CSS3
+- **Frontend**: Vanilla JavaScript, HTML5, CSS3
 - **Data Visualization**: D3.js v7 for interactive charts and custom SVG mapping
 - **Data Preprocessing**: KNIME Analytics Platform for dataset preparation and cleaning
 - **Build Tools**: http-server for local development
-- **Additional Libraries**:
-  - html2canvas (for dashboard export functionality)
-  - d3-geo (for custom map projections)
 
 ## Dataset Overview
 
@@ -168,22 +165,6 @@ Data coverage spans 2008-2023 with annual updates, including:
 - Detection method effectiveness comparison
 - Long-term enforcement trend analysis
 
-## Browser Compatibility
-
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-visualization`)
-3. Commit your changes (`git commit -am 'Add new chart type'`)
-4. Push to the branch (`git push origin feature/new-visualization`)
-5. Create a Pull Request
-
-## Development Notes
 
 ### Adding New Visualizations
 1. Create a new chart module in `charts/`
@@ -207,10 +188,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Inspired by modern dashboard design principles
 - Australian map data based on official geographic boundaries
 
-## Support
-
-For questions, feature requests, or bug reports, please open an issue on GitHub or contact the development team.
-
----
-
-**Note**: This project requires actual traffic fines data to function properly. Sample data generators or official datasets from Australian government sources are needed for full functionality.
