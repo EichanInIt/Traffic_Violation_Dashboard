@@ -1,4 +1,4 @@
-# Traffic_Violation_Dashboard# Traffic Safety Enforcement Dashboard
+# Traffic Safety Enforcement Dashboard
 
 An interactive web dashboard for visualizing Australian traffic violation patterns, built with JavaScript and D3.js. This project empowers citizens and authorities to identify dangerous patterns by processing 2,852 violation records from 8 jurisdictions into user-friendly visualizations for better public safety decisions.
 
