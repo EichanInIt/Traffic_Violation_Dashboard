@@ -1,0 +1,13 @@
+{
+  "name": "traffic-fines-dashboard",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "npx http-server -c-1",
+    "dev": "npx http-server -c-1"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Traffic Fines Data</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <nav class="navigation">
+      <div class="nav-group">
+        <a href="index.html" class="nav-link">Speed Fines</a>
+        <a href="mobile.html" class="nav-link">Mobile Use Fines</a>
+        <a href="about.html" class="nav-link active">About Data</a>
+      </div>
+    </nav>
+
+    <header>
+      <h1>About Traffic Fines Data</h1>
+    </header>
+
+    <div class="about-content">
+      <section class="info-card">
+        <h2>Data Sources</h2>
+        <p>This project visualises data related to traffic offences collected from Australian government sources. The dataset includes:</p>
+        <ul>
+          <li><strong>Speeding fines</strong> reported by state transport and road safety departments.</li>
+          <li><strong>Mobile phone use while driving</strong> violations obtained from police enforcement records.</li>
+          <li><strong>State-level demographic context</strong> integrated from Australian Bureau of Statistics (ABS) for age group comparisons.</li>
+        </ul>
+      </section>
+
+      <section class="info-card">
+        <h2>Data Collection Methods</h2>
+        <p>Traffic offence data is collected through both manual and automated enforcement mechanisms. These include:</p>
+        <ul>
+          <li><strong>Police-issued fines:</strong> Officers manually record offences such as mobile phone use, speeding, and dangerous behaviour.</li>
+          <li><strong>Fixed and mobile detection cameras:</strong> Devices placed on roads to capture speeding and phone violations automatically.</li>
+          <li><strong>Red light and mobile phone detection systems:</strong> Used increasingly in urban areas to catch distracted driving.</li>
+        </ul>
+        <p>The dataset includes information on which detection method was used for each offence.</p>
+      </section>
+
+      <section class="info-card">
+        <h2>Data Coverage and Updates</h2>
+        <p>The dataset spans from <strong>2008 to 2023</strong> and is updated annually. Each record includes:</p>
+        <ul>
+          <li><strong>Year of offence</strong></li>
+          <li><strong>State or territory where the offence occurred</strong></li>
+          <li><strong>Detection method</strong> (Police or Camera)</li>
+          <li><strong>Fine amount and count</strong></li>
+          <li><strong>Offender’s age group</strong></li>
+        </ul>
+        <p>This allows for trend analysis over time, comparison between jurisdictions, and insights into enforcement strategies.</p>
+      </section>
+
+      <section class="info-card">
+        <h2>How the Dashboard Uses the Data</h2>
+        <p>The dashboard provides two main views — one for <strong>Speed Fines</strong> and one for <strong>Mobile Phone Use</strong>. Users can explore the data interactively using:</p>
+        <ul>
+          <li><strong>Year slider</strong> to view fines in a specific year.</li>
+          <li><strong>Checkbox filters</strong> to include or exclude detection methods.</li>
+          <li><strong>Age group buttons</strong> to compare behaviour across demographic segments.</li>
+        </ul>
+        <p>Visualisations include pie charts, bar charts, line charts, choropleth maps, and detailed summary tables. These update in real time based on the selected filters.</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Use Fines Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-geo.v3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <nav class="navigation">
+            <div class="nav-group">
+                <a href="index.html" class="nav-link">Speed Fines</a>
+                <a href="mobile.html" class="nav-link active">Mobile Use Fines</a>
+                <a href="about.html" class="nav-link">About Data</a>
+            </div>
+            <div class="nav-group">
+                <button type="button" class="nav-button" id="downloadData">Download Report</button>
+            </div>
+        </nav>
+        <header>
+            <h1>Mobile Use Fines Dashboard</h1>
+            <div class="filters">
+                <div class="slider-container">
+                    <label for="yearFilter">Year</label>
+                    <input type="range" id="yearFilter" class="year-slider" min="2008" max="2023" value="2008" step="1">
+                    <div id="yearLabel" class="year-label">2008</div>
+                </div>
+                <div class="filter-group">
+                    <label>Detection Method</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" value="Police issued" checked> Police-issued
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" value="Fixed or mobile camera" checked> Camera
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label>Age Group</label>
+                    <div class="button-group">
+                        <button type="button" class="age-button active" data-age="All ages">All</button>
+                        <button type="button" class="age-button" data-age="0-16">0-16</button>
+                        <button type="button" class="age-button" data-age="17-25">17-25</button>
+                        <button type="button" class="age-button" data-age="26-39">26-39</button>
+                        <button type="button" class="age-button" data-age="40-64">40-64</button>
+                        <button type="button" class="age-button" data-age="65+">65+</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Total Fines Count</h3>
+                <div id="totalFines" class="metric"></div>
+            </div>
+
+            <div class="card">
+                <h3>Average Fines Count</h3>
+                <div id="averageFine" class="metric"></div>
+            </div>
+        </div>
+        <div class="chart-summary-description">
+  <p>📊 Charts Navigation Guide.</p>
+  <ul>
+    <li><strong>Detection Methods</strong>: Shows how fines are divided between detection methods. Helps identify the primary enforcement approach used across selected criteria.</li>
+    <li><strong>Fines by State</strong>: Bar chart comparing total fines issued in each state and territory. Use this to spot regions with higher or lower enforcement activity.</li>
+    <li><strong>Trend Over Time</strong>: Line chart tracking the number of fines that changed from 2008 to 2023. Helps reveal trends like increases, declines, or sudden shifts tied to policy changes.</li>
+    <li><strong>Jurisdiction Map</strong>: A colour-coded map that visually displays the intensity of fines across Australia. Darker regions indicate states with higher fine counts in the selected year.</li>
+    <li><strong>State Summary Table</strong>: A breakdown table showing each state’s total fines and mostly used detection method. This complements charts by providing exact figures.</li>
+  </ul>
+  <p>Use these charts together to discover patterns, spot anomalies, and better understand how enforcement varies by location, time, and detection method.</p>
+</div>
+
+
+        <div class="charts">
+            <div class="chart-container">
+                <h3>Detection Methods</h3>
+                <div id="pieChart"></div>
+            </div>
+            <div class="chart-container">
+                <h3>Fines by State</h3>
+                <div id="barChart"></div>
+            </div>
+            <div class="chart-container wide">
+                <h3>Trend Over Time</h3>
+                <div id="lineChart"></div>
+            </div>
+            <div class="chart-container wide map-section">
+  <div class="map-and-table">
+    <div class="map-area">
+      <h3>Jurisdiction</h3>
+      <div id="mapChart"></div>
+      <div id="mapLegend">
+        <div class="legend-bar"></div>
+        <div class="legend-labels">
+          <span>Low</span>
+          <span>High</span>
+        </div>
+      </div>
+    </div>
+    <div class="table-area">
+      <h3>State Summary Table</h3>
+      <table id="summaryTable">
+        <thead>
+          <tr>
+            <th scope="col">State</th>
+            <th scope="col">Most Common Method</th>
+            <th scope="col">Total Fines</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+    <script src="data.js"></script>
+    <script src="charts/pieChart.js"></script>
+    <script src="charts/barChart.js"></script>
+    <script src="charts/lineChart.js"></script>
+    <script src="charts/mapChart.js"></script>
+    <script src="mobile-app.js"></script>
+</body>
+</html>
