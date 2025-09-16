@@ -12,7 +12,7 @@ The mobile phone violations dashboard shows comprehensive analysis of distracted
 ### Speed Violations Dashboard  
 ![Speed Violations Dashboard](screenshots/Traffic_Safety_Report.png)
 
-The speed violations dashboard provides detailed insights into speeding enforcement patterns, showing distribution across states, detection methods (police vs. camera), and trends over time with interactive choropleth mapping.
+The speed violations dashboard provides detailed insights into speeding enforcement patterns, showing distribution across states, detection methods (police vs. camera), and trends over time with interactive mapping.
 
 ## Features
 
@@ -22,7 +22,6 @@ The speed violations dashboard provides detailed insights into speeding enforcem
 - **Real-time Pattern Identification**: Instant filtering by year, detection method, and age group
 - **KNIME-Preprocessed Data**: Complex enforcement datasets converted into user-friendly insights
 - **Dual Dashboard Views**: Separate analyses for speed violations and mobile phone use while driving
-- **Responsive Design**: Modern, glassmorphism-inspired UI that works across devices
 - **Export Functionality**: Download dashboard reports as PNG images for presentations and reports
 
 ## Project Structure
@@ -70,27 +69,6 @@ git clone https://github.com/yourusername/traffic-safety-enforcement-dashboard.g
 cd traffic-safety-enforcement-dashboard
 ```
 
-2. **Option 1: VS Code Live Server Extension**
-   - Install the Live Server extension in VS Code
-   - Right-click on `index.html` and select "Open with Live Server"
-   - Navigate to the displayed localhost URL
-
-3. **Option 2: Python HTTP Server**
-```bash
-# Python 3
-python -m http.server 8000
-
-# Python 2
-python -m SimpleHTTPServer 8000
-```
-
-4. **Option 3: PHP Built-in Server**
-```bash
-php -S localhost:8000
-```
-
-5. Open your browser and navigate to the appropriate localhost URL
-
 ### File Structure Requirements
 
 Ensure your directory structure matches:
@@ -126,7 +104,6 @@ The dashboard expects CSV files with the following structure:
 - **Frontend**: Vanilla JavaScript, HTML5, CSS3
 - **Data Visualization**: D3.js v7 for interactive charts and custom SVG mapping
 - **Data Preprocessing**: KNIME Analytics Platform for dataset preparation and cleaning
-- **Build Tools**: http-server for local development
 
 ## Dataset Overview
 
@@ -141,7 +118,7 @@ This dashboard processes **2,852 traffic violation records** spanning **8 Austra
 - **Quality Assurance**: Data quality checks and outlier detection
 
 ### D3.js Visualization Components
-- **Custom SVG Maps**: Hand-crafted Australian jurisdiction boundaries
+- **Custom SVG Maps**:  Australian jurisdiction boundaries
 - **Interactive Filtering**: Real-time chart updates based on user selections
 - **Pattern Recognition**: Visual highlighting of dangerous violation trends
 - **Responsive Charts**: Adaptive visualizations for different screen sizes
