@@ -18,7 +18,7 @@ The speed violations dashboard provides detailed insights into speeding enforcem
 
 - **Empowers Public Safety**: Enables citizens and authorities to identify dangerous traffic violation patterns
 - **Comprehensive Data Processing**: Analyzes 2,852 violation records from 8 Australian jurisdictions
-- **Interactive Data Visualization**: Pie charts, bar charts, line charts, and custom SVG choropleth maps
+- **Interactive Data Visualization**: Pie charts, bar charts, line charts, and custom SVG maps
 - **Real-time Pattern Identification**: Instant filtering by year, detection method, and age group
 - **KNIME-Preprocessed Data**: Complex enforcement datasets converted into user-friendly insights
 - **Dual Dashboard Views**: Separate analyses for speed violations and mobile phone use while driving
@@ -166,16 +166,9 @@ Data coverage spans 2008-2023 with annual updates, including:
 - Long-term enforcement trend analysis
 
 
-### Adding New Visualizations
-1. Create a new chart module in `charts/`
-2. Export the chart function following the existing pattern
-3. Import and integrate into the main application files
-4. Update the filtering logic if needed
-
 ### Data Integration
 - CSV files should follow the established column naming convention
 - New data sources require updates to the parsing logic in `data.js`
-- Geographic data must match Australian Bureau of Statistics codes
 
 ## License
 
@@ -183,8 +176,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- Data sourced from Australian state and territory transport departments
+- **Co-Contributor**: [Senuja Linal](https://github.com/senujalinal) - Collaborative development and technical contributions
+- Data source: [Road safety enforcement data 2024] (https://www.bitre.gov.au/publications/2024/road-safety-enforcement-data)
 - Built with D3.js visualization library
-- Inspired by modern dashboard design principles
 - Australian map data based on official geographic boundaries
+
 
