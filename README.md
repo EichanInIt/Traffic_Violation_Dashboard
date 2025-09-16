@@ -5,12 +5,12 @@ An interactive web dashboard for visualizing Australian traffic violation patter
 ## Dashboard Screenshots
 
 ### Mobile Phone Violations Dashboard
-![Mobile Use Violations Dashboard](screenshots/mobile-violations-dashboard.png)
+![Mobile Use Violations Dashboard](screenshots/Mobile_Safety_Report.png)
 
 The mobile phone violations dashboard shows comprehensive analysis of distracted driving enforcement across Australian jurisdictions. Features include real-time filtering by detection method, age groups, and temporal analysis from 2008-2023.
 
 ### Speed Violations Dashboard  
-![Speed Violations Dashboard](screenshots/speed-violations-dashboard.png)
+![Speed Violations Dashboard](screenshots/Traffic_Safety_Report.png)
 
 The speed violations dashboard provides detailed insights into speeding enforcement patterns, showing distribution across states, detection methods (police vs. camera), and trends over time with interactive choropleth mapping.
 
